@@ -1,15 +1,11 @@
-let fs = require("fs");
+const {readFile, writeFile} = require("./utils");
 
-const getUsers = (callback) => {
-  return new Promise((res, rej) => {
-    fs.readFile("users.json", (err, buff) => {
-      res(JSON.parse(buff))
-    })
-  })
-};
+const getUsers = () => readFile("users.json")
 
-const addUser = (id, name) => {
+const addUser = async (id, name) => {
+  let users = await getUsers()
   users.push({id: id, name: name})
+  return writeFile("users.json", users)
 };
 
 exports.getUsers = getUsers;
