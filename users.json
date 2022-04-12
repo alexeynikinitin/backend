@@ -1,1 +1,14 @@
-[{"id":1,"name":"Sasha"},{"id":2,"name":"Artem"},{"id":3,"name":"Lesha"},{"id":3,"name":"Lesha"},{"id":3,"name":"Lesha"},{"id":3,"name":"Lesha"},{"id":3,"name":"Lesha"},{"id":3,"name":"Lesha"}]
+[
+  {
+    "id": 1,
+    "name": "Sasha"
+  },
+  {
+    "id": 2,
+    "name": "Artem"
+  },
+  {
+    "id": 3,
+    "name": "Lesha"
+  }
+]
