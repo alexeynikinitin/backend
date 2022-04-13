@@ -12,7 +12,7 @@ async function main() {
 
 
 const app = express()
-const port = 7542
+const port = process.env.PORT || 7542
 
 app.use(cors())
 
